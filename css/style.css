@@ -4,7 +4,8 @@
 }
 
 body {
-    max-width: 1400px;
+    max-width: 1440px;
+    min-width: 320px;
     margin: auto;
     font-weight: 400;
     font-size: 1em;
@@ -14,22 +15,22 @@ body {
     margin: 0 20px 0 20px;
 }
 
-a {
+.logo-link, .menu-link, .filter-link, .card-link, .footer-link, .component-link {
     color: black;
     text-decoration: none;
     width: 100%;
 }
 
-li {
+.menu-element, .filter-button, .footer-element {
     list-style-type: none;
 }
 
-ul {
+.menu, .filter-list, .footer-list {
     padding: 0;
 }
 
 /* Header, comprenant la navigation */
-header {
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -70,18 +71,18 @@ header {
 }
 
 /* Règles générales pour les différentes sections*/
-section {
+.form-filter, .container, .section-block {
     margin-top: 40px;
 }
 
 /* Titre principal */
-h1 {
+.main-title {
     font-size: 1.4em;
     margin-bottom: 10px;
 }
 
 /* Formulaire de recherche */
-form {
+.search-form {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -197,8 +198,15 @@ form {
     background: #FFFFFF;
     border-radius: 20px;
     margin-bottom: 20px;
+    transform: scale(1);
+    transition-duration: 200ms;
 }
-  
+
+.card:hover, .card:focus-within {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
 .card-img {
     object-fit: cover;
 }
@@ -208,11 +216,11 @@ form {
     font-size: 0.9em;
 }
 
-h3 {
+.card-title {
     margin: 3px;
 }
 
-h3, .currency {
+.card-title, .currency {
     font-weight: 700;
     font-size: 1em;
 }
@@ -277,7 +285,7 @@ h3, .currency {
     padding: 30px;
 }
 
-h2 {
+.section-title {
     font-size: 1.4em;
     margin: 10px 15px 30px 15px;
     font-weight: 700;
@@ -352,18 +360,8 @@ h2 {
     flex-wrap: wrap;
 }
 
-/* Effet sur les cards */
-article {
-    transform: scale(1);
-    transition-duration: 200ms;
-}
-article:hover, article:focus-within {
-    transform: scale(1.1);
-    transition-duration: 200ms;
-}
-
 /* Footer */
-footer {
+.footer {
     background-color: #F2F2F2;
     margin-top: 40px;
     display: flex;
@@ -372,7 +370,7 @@ footer {
     padding: 30px 0 50px 60px;
 }
 
-h4 {
+.footer-title {
     font-weight: 700;
     font-size: 1.1em;
 }
@@ -386,8 +384,8 @@ h4 {
     font-size: 1em;
 }
 
-/* Sur tous types d'écran, lorsque la largeur de la fenêtre est comprise entre 768px et 992px */
-@media all and (min-width: 768px) and (max-width: 992px) {
+/* Sur tous types d'écran, lorsque la largeur de la fenêtre est comprise entre 768px et 1024px */
+@media all and (min-width: 768px) and (max-width: 1024px) {
     /* Modification du positionnement des sections Hébergements et Populaires */
     .container-accommodation-popular {
         flex-direction: column-reverse;
@@ -412,7 +410,7 @@ h4 {
     .card-img-activities {
         height: 211px;
     }
-    footer {
+    .footer {
         margin: 40px 0 0 0;
     }
 }
@@ -420,7 +418,7 @@ h4 {
 /* Sur tous types d'écran, lorsque la largeur de la fenêtre est inférieure à 768px */
 @media all and (max-width: 768px) {
     /* Header */
-    header {
+    .header {
         flex-direction: column;
         align-items: center;
         margin: 20px -20px 0 -20px;
@@ -517,7 +515,7 @@ h4 {
     }
 
     /* Footer */
-    footer {
+    .footer {
         margin: 60px -20px 0 -20px;
         flex-direction: column;
         padding: 20px 30px 50px 30px;
