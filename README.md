@@ -20,6 +20,15 @@ Le site a été développé d'abord pour ordinateur, puis adapté pour tablette 
 
 La largeur du contenu est limitée à 1440px maximum, pour éviter que le site s'étire trop sur un très grand écran.
 
+## Fonctionnalités
+
+- Recherche d'un hébergement  (interface uniquement)
+- Affichage des hébergements populaires
+- Affichage des hébergements classiques
+- Filtrage des logements par catégorie
+- Présentation des activités disponibles dans la ville
+- Adaptation de l'affichage selon la taille de l'écran
+
 ## Structure du projet
 
 index.html
