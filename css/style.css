@@ -192,7 +192,9 @@ body {
     color: #0065FC;
 }
 
-/* Card */
+/* ==========================
+   Style commun des cartes
+   ========================== */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background: #FFFFFF;
@@ -233,7 +235,9 @@ body {
     opacity: 0.1;
 }
 
-/* Card hébergement */
+/* ==========================
+   Cartes des hébergements
+   ========================== */
 .card-accommodation {
     width: 30%;
     padding: 5px;
@@ -360,7 +364,9 @@ body {
     flex-wrap: wrap;
 }
 
-/* Footer */
+/* ==========================
+   Pied de page
+   ========================== */
 .footer {
     background-color: #F2F2F2;
     margin-top: 40px;
